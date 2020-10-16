@@ -1,0 +1,9 @@
+sudo: required
+language: generic
+services:
+    - docker
+before_install:
+    - docker build -t jfmonteil/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true jfmonteil/docker-react npm run test -- --coverage
