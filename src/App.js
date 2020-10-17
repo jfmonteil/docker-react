@@ -18,6 +18,7 @@ function App() {
         >
           Love DATA !
         </a>
+		<A>I was changed</a>
       </header>
     </div>
   );
